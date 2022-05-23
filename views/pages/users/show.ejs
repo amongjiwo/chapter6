@@ -1,0 +1,37 @@
+<button type="button" onclick="history.back()" class="btn btn-light">
+  <i class="bi-arrow-left"></i>
+  Back
+</button>
+
+<h3 class="my-3">User - <%= user.username %></h3>
+
+<div class="table-responsive mt-3">
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <th scope="row">Username</th>
+        <td>
+          <%= user.username %>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Password</th>
+        <td>
+          <%= user.password %>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Created Data</th>
+        <td>
+          <%= user.createdAt %>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">Updated Data</th>
+        <td>
+          <%= user.updatedAt %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

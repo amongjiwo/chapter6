@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "alan",
+    "password": "tempegoreng",
+    "database": "ch6_game_development",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "alan",
+    "password": "tempegoreng",
+    "database": "ch6_game_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "alan",
+    "password": "tempegoreng",
+    "database": "ch6_game_production",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

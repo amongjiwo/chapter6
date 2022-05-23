@@ -1,0 +1,37 @@
+<button type="button" onclick="history.back()" class="btn btn-light">
+  <i class="bi-arrow-left"></i>
+  Back
+</button>
+
+<h3 class="my-3"><%= pageTitle %></h3>
+
+<div class="table-responsive mt-3">
+  <table class="table table-bordered">
+    <tbody>
+      <tr>
+        <th scope="row">Name</th>
+        <td><%= profile.name %></td>
+      </tr>
+      <tr>
+        <th scope="row">Phone</th>
+        <td><%= profile.phoneNumber %></td>
+      </tr>
+      <tr>
+        <th scope="row">Email</th>
+        <td><%= profile.email %></td>
+      </tr>
+      <tr>
+        <th scope="row">User</th>
+        <td><%= profile.user.username %></td>
+      </tr>
+      <tr>
+        <th scope="row">Created Data</th>
+        <td><%= profile.createdAt %></td>
+      </tr>
+      <tr>
+        <th scope="row">Updated Data</th>
+        <td><%= profile.updatedAt %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

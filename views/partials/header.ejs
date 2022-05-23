@@ -1,0 +1,31 @@
+<header class="border-bottom py-2 mb-4">
+  <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <a class="navbar-brand" href="/">Game Dashboard</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <% if (url.includes('/users')) { %>
+              <a href="/users" class="nav-link active" aria-current="page">User</a>
+            <% } else { %> 
+              <a href="/users" class="nav-link">User</a>
+            <% } %>
+          </li>
+
+          <li class="nav-item">
+            <% if (url.includes('/profiles')) { %>
+              <a href="/profiles" class="nav-link active" aria-current="page">Biodata</a>
+            <% } else { %>
+              <a href="/profiles" class="nav-link">Profile</a>
+            <% } %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+</header>

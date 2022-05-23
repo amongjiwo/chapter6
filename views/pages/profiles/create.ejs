@@ -1,0 +1,44 @@
+<h3 class="mb-3"><%= pageTitle %></h3>
+
+<form method="post" action="/profiles">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" name="name" id="name" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="phoneNumber" class="form-label">Phone</label>
+    <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email">
+  </div>
+
+  <div class="mb-4">
+    <label for="user" class="form-label">User</label>
+    <select class="form-select" aria-label="User" name="userId" required>
+      <option selected disabled value="">-- Silahkan pilih --</option>
+      <% users.forEach((user)=> { %>
+        <option value="<%= user.id %>">
+          <%= user.username %>
+        </option>
+        <% }) %>
+    </select>
+  </div>
+
+  <div class="row">
+    <div class="col-auto">
+      <button type="button" onclick="history.back()" class="btn btn-danger">Cancel</button>
+    </div>
+
+    <div class="col-auto">
+      <button type="reset" class="btn btn-secondary">Reset</button>
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
